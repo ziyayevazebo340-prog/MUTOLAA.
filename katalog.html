@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog — MUTOLAA Kitob Do‘koni</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">MUTOLAA<span>.</span></a>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger" aria-label="Menyu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html">Bosh sahifa</a></li>
+        <li><a href="katalog.html" class="active">Katalog</a></li>
+        <li><a href="haqimizda.html">Biz haqimizda</a></li>
+        <li><a href="aloqa.html">Aloqa</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="section-header">
+        <h2>Kitoblar katalogi</h2>
+        <p>Janrni tanlang yoki o‘zingizga yoqqan asar haqida batafsil ma’lumot oling</p>
+      </div>
+
+      <!-- Toza CSS Radio Filter -->
+      <div class="filter-wrapper">
+        <input type="radio" name="category" id="tab-all" checked>
+        <input type="radio" name="category" id="tab-klassika">
+        <input type="radio" name="category" id="tab-psixologiya">
+        <input type="radio" name="category" id="tab-tarix">
+
+        <div class="filter-tabs">
+          <label for="tab-all">Barchasi (6)</label>
+          <label for="tab-klassika">Klassika</label>
+          <label for="tab-psixologiya">Psixologiya</label>
+          <label for="tab-tarix">Tarixiy</label>
+        </div>
+
+        <div class="books-grid">
+          <article class="book-card" data-cat="klassika">
+            <div class="book-cover">
+              <span class="book-tag">Klassika</span>
+              <img src="https://hilolnashr.uz/image/cache/catalog/001-Kitoblar/003_boshqalar/002_badiy/2024/ok2-500x750.jpg" alt="O‘tkan kunlar">
+            </div>
+            <div class="book-info">
+              <span class="book-author">Abdulla Qodiriy</span>
+              <h3 class="book-title">O‘tkan kunlar</h3>
+              <p class="book-desc">XIX asr o‘rtalaridagi Turkiston hayoti va Otabek hamda Kumushbibi muhabbati.</p>
+              <div class="book-footer">
+                <span class="book-price">65 000 so‘m</span>
+                <a href="#book-1" class="book-link">Batafsil →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card" data-cat="klassika">
+            <div class="book-cover">
+              <span class="book-tag">Klassika</span>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8EjWu60u70SmsXMmOg-WqXyhBrwuUVB4s04iQA9P5HQ&s=10" alt="Jinoyat va jazo">
+            </div>
+            <div class="book-info">
+              <span class="book-author">Fyodor Dostoyevskiy</span>
+              <h3 class="book-title">Jinoyat va jazo</h3>
+              <p class="book-desc">Peterburg ko‘chalaridagi ruhiy iztiroblar va insoniylik sinovi haqida shoh asar.</p>
+              <div class="book-footer">
+                <span class="book-price">85 000 so‘m</span>
+                <a href="#book-2" class="book-link">Batafsil →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card" data-cat="psixologiya">
+            <div class="book-cover">
+              <span class="book-tag">Psixologiya</span>
+              <img src="https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/0012534847d973e1c9d270721e0f81d8202309151642268162292tjf4gum1.jpg.webp" alt="Atom odatlar">
+            </div>
+            <div class="book-info">
+              <span class="book-author">Jeyms Klir</span>
+              <h3 class="book-title">Atom odatlar</h3>
+              <p class="book-desc">Yomon odatlardan voz kechish va foydali odatlarni shakllantirish tizimi.</p>
+              <div class="book-footer">
+                <span class="book-price">72 000 so‘m</span>
+                <a href="#book-3" class="book-link">Batafsil →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card" data-cat="tarix">
+            <div class="book-cover">
+              <span class="book-tag">Tarixiy</span>
+              <img src="https://mutolaa.com/_next/image?url=https%3A%2F%2Fcdn-minio.mutolaa.com%2Fmedia%2Fbooks%2F2026%2F07%2Fphoto_2026-07-07_15-25-03.jpg&w=3840&q=75" alt="Yulduzli tunlar">
+            </div>
+            <div class="book-info">
+              <span class="book-author">Pirimqul Qodirov</span>
+              <h3 class="book-title">Yulduzli tunlar</h3>
+              <p class="book-desc">Zahiriddin Muhammad Boburning murakkab va shonli hayot yo‘li haqida tarixiy roman.</p>
+              <div class="book-footer">
+                <span class="book-price">78 000 so‘m</span>
+                <a href="#book-4" class="book-link">Batafsil →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card" data-cat="psixologiya">
+            <div class="book-cover">
+              <span class="book-tag">Psixologiya</span>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmCjZFprbBdGJe_7tzWEtiW8htVbaUHFEElxgxNXT5o1b9vWiDm_4FCps&s=10" alt="Inson mazmun izlab">
+            </div>
+            <div class="book-info">
+              <span class="book-author">Viktor Frankl</span>
+              <h3 class="book-title">Hayotdan mazmun izlab</h3>
+              <p class="book-desc">Eng og‘ir sinovlarda ham hayotga bo‘lgan umid va ma’noni saqlab qolish falsafasi.</p>
+              <div class="book-footer">
+                <span class="book-price">55 000 so‘m</span>
+                <a href="#book-5" class="book-link">Batafsil →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card" data-cat="tarix">
+            <div class="book-cover">
+              <span class="book-tag">Tarixiy</span>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYF9lBOvMRxaEnht5SNTkloiYGCD9tbiOnh4SpVvxryQ&s=10+" alt="Temur tuzuklari">
+            </div>
+            <div class="book-info">
+              <span class="book-author">Amir Temur</span>
+              <h3 class="book-title">Temur tuzuklari</h3>
+              <p class="book-desc">Davlat boshqaruvi, adolat va harbiy strategiyaga oid noyob tarixiy manba.</p>
+              <div class="book-footer">
+                <span class="book-price">90 000 so‘m</span>
+                <a href="#book-6" class="book-link">Batafsil →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CSS :TARGET MODAL OYNALARI -->
+    <div id="book-1" class="modal">
+      <div class="modal-box">
+        <a href="#close" class="modal-close">&times;</a>
+        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80" alt="O‘tkan kunlar">
+        <div>
+          <span class="book-author">Abdulla Qodiriy</span>
+          <h3>O‘tkan kunlar</h3>
+          <p style="margin: 0.8rem 0; color: var(--text-muted); font-size: 0.95rem;">Qattiq muqova • 432 bet • O‘zbek tilida. Asl nusxa asosida tayyorlangan klassik sovg‘abop nashr.</p>
+          <p class="book-price" style="margin-bottom: 1.2rem;">65 000 so‘m</p>
+          <a href="aloqa.html" class="btn btn-primary">Buyurtma berish</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="book-2" class="modal">
+      <div class="modal-box">
+        <a href="#close" class="modal-close">&times;</a>
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80" alt="Jinoyat va jazo">
+        <div>
+          <span class="book-author">Fyodor Dostoyevskiy</span>
+          <h3>Jinoyat va jazo</h3>
+          <p style="margin: 0.8rem 0; color: var(--text-muted); font-size: 0.95rem;">Qattiq muqova • 672 bet • Ibrohim G‘afurov tarjimasi. Jahon adabiyotining eng yuksak namunalaridan biri.</p>
+          <p class="book-price" style="margin-bottom: 1.2rem;">85 000 so‘m</p>
+          <a href="aloqa.html" class="btn btn-primary">Buyurtma berish</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="book-3" class="modal">
+      <div class="modal-box">
+        <a href="#close" class="modal-close">&times;</a>
+        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=600&q=80" alt="Atom odatlar">
+        <div>
+          <span class="book-author">Jeyms Klir</span>
+          <h3>Atom odatlar</h3>
+          <p style="margin: 0.8rem 0; color: var(--text-muted); font-size: 0.95rem;">Yumshoq muqova • 320 bet • New York Times bestselleri. Kuniga 1% yaxshilanish nazariyasi.</p>
+          <p class="book-price" style="margin-bottom: 1.2rem;">72 000 so‘m</p>
+          <a href="aloqa.html" class="btn btn-primary">Buyurtma berish</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="book-4" class="modal">
+      <div class="modal-box">
+        <a href="#close" class="modal-close">&times;</a>
+        <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=600&q=80" alt="Yulduzli tunlar">
+        <div>
+          <span class="book-author">Pirimqul Qodirov</span>
+          <h3>Yulduzli tunlar</h3>
+          <p style="margin: 0.8rem 0; color: var(--text-muted); font-size: 0.95rem;">Qattiq muqova • 560 bet • Tarixiy-biografik romanning to‘liq va bezakli nashri.</p>
+          <p class="book-price" style="margin-bottom: 1.2rem;">78 000 so‘m</p>
+          <a href="aloqa.html" class="btn btn-primary">Buyurtma berish</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="book-5" class="modal">
+      <div class="modal-box">
+        <a href="#close" class="modal-close">&times;</a>
+        <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=600&q=80" alt="Inson mazmun izlab">
+        <div>
+          <span class="book-author">Viktor Frankl</span>
+          <h3>Inson mazmun izlab</h3>
+          <p style="margin: 0.8rem 0; color: var(--text-muted); font-size: 0.95rem;">Yumshoq muqova • 208 bet • Logoterapiya asoschisining mashhur psixologik asari.</p>
+          <p class="book-price" style="margin-bottom: 1.2rem;">55 000 so‘m</p>
+          <a href="aloqa.html" class="btn btn-primary">Buyurtma berish</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="book-6" class="modal">
+      <div class="modal-box">
+        <a href="#close" class="modal-close">&times;</a>
+        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=600&q=80" alt="Temur tuzuklari">
+        <div>
+          <span class="book-author">Amir Temur</span>
+          <h3>Temur tuzuklari</h3>
+          <p style="margin: 0.8rem 0; color: var(--text-muted); font-size: 0.95rem;">Charm muqova • 368 bet • Sharqona naqshlar bilan bezatilgan maxsus sovg‘abop nashr.</p>
+          <p class="book-price" style="margin-bottom: 1.2rem;">90 000 so‘m</p>
+          <a href="aloqa.html" class="btn btn-primary">Buyurtma berish</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">MUTOLAA<span>.</span></a>
+        <p>Toshkent shahridagi klassik kitoblar va intellektual suhbatlar maskani. Har kuni siz uchun ochiqmiz.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sahifalar</h4>
+        <ul>
+          <li><a href="index.html">Bosh sahifa</a></li>
+          <li><a href="katalog.html">Kitoblar katalogi</a></li>
+          <li><a href="haqimizda.html">Biz haqimizda</a></li>
+          <li><a href="aloqa.html">Aloqa</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Manzil va vaqt</h4>
+        <ul>
+          <li>Toshkent sh., Amir Temur shoh ko‘chasi, 45</li>
+          <li>Dush – Yak: 09:00 – 21:00</li>
+          <li>+998 (71) 200-45-67</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      &copy; 2026 MUTOLAA Kitob Do‘koni. Barcha huquqlar himoyalangan.
+    </div>
+  </footer>
+
+</body>
+</html>

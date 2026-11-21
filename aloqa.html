@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aloqa — MUTOLAA Kitob Do‘koni</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">MUTOLAA<span>.</span></a>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger" aria-label="Menyu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html">Bosh sahifa</a></li>
+        <li><a href="katalog.html">Katalog</a></li>
+        <li><a href="haqimizda.html">Biz haqimizda</a></li>
+        <li><a href="aloqa.html" class="active">Aloqa</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="section-header">
+        <h2>Biz bilan bog‘laning</h2>
+        <p>Kitob buyurtma qilish yoki savollaringiz bo‘lsa, quyidagi shakl orqali xabar qoldiring</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3 style="margin-bottom: 1.5rem;">Do‘kon ma’lumotlari</h3>
+          
+          <div class="info-item">
+            <h4>Manzil</h4>
+            <p>Toshkent shahri, Yunusobod tumani, Amir Temur shoh ko‘chasi, 45-uy</p>
+          </div>
+
+          <div class="info-item">
+            <h4>Telefon raqam</h4>
+            <p>+998 (71) 200-45-67<br>+998 (90) 123-45-67</p>
+          </div>
+
+          <div class="info-item">
+            <h4>Elektron pochta</h4>
+            <p>info@mutolaa-books.uz</p>
+          </div>
+
+          <div class="info-item" style="margin-bottom: 0;">
+            <h4>Ish vaqti</h4>
+            <p>Dushanba – Yakshanba: 09:00 dan 21:00 gacha (dam olish kunlarisiz)</p>
+          </div>
+        </div>
+
+        <form class="contact-form" action="#sent" method="get">
+          <h3 style="margin-bottom: 1.5rem;">Xabar yoki buyurtma yuborish</h3>
+          
+          <div class="form-group">
+            <label for="name">Ismingiz</label>
+            <input type="text" id="name" name="name" placeholder="Masalan: Sardor Karimov" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Telefon raqamingiz</label>
+            <input type="tel" id="phone" name="phone" placeholder="+998 90 000 00 00" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Murojaat mavzusi</label>
+            <select id="subject" name="subject">
+              <option value="order">Kitob buyurtma qilish</option>
+              <option value="search">Maxsus kitob qidirish</option>
+              <option value="question">Umumiy savol</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Kitob nomi yoki xabaringiz</label>
+            <textarea id="message" name="message" rows="4" placeholder="Qaysi kitobni buyurtma qilmoqchisiz?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Yuborish</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- CSS :TARGET XABAR YUBORILDI OYNASI -->
+    <div id="sent" class="modal">
+      <div class="modal-box" style="grid-template-columns: 1fr; text-align: center; max-width: 440px;">
+        <a href="#close" class="modal-close">&times;</a>
+        <div>
+          <h3 style="margin-bottom: 0.6rem;">Xabaringiz qabul qilindi!</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.4rem;">Operatorlarimiz tez orada ko‘rsatilgan telefon raqami orqali siz bilan bog‘lanishadi.</p>
+          <a href="#close" class="btn btn-primary">Yopish</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">MUTOLAA<span>.</span></a>
+        <p>Toshkent shahridagi klassik kitoblar va intellektual suhbatlar maskani. Har kuni siz uchun ochiqmiz.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sahifalar</h4>
+        <ul>
+          <li><a href="index.html">Bosh sahifa</a></li>
+          <li><a href="katalog.html">Kitoblar katalogi</a></li>
+          <li><a href="haqimizda.html">Biz haqimizda</a></li>
+          <li><a href="aloqa.html">Aloqa</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Manzil va vaqt</h4>
+        <ul>
+          <li>Toshkent sh., Amir Temur shoh ko‘chasi, 45</li>
+          <li>Dush – Yak: 09:00 – 21:00</li>
+          <li>+998 (71) 200-45-67</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      &copy; 2026 MUTOLAA Kitob Do‘koni. Barcha huquqlar himoyalangan.
+    </div>
+  </footer>
+
+</body>
+</html>
